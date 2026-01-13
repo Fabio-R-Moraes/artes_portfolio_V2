@@ -1,0 +1,31 @@
+{% load i18n %}
+<button class="button-show-menu button-show-menu-visible">
+     <i class="fa-solid fa-bars"></i>
+     <span class="hidden-text">{% translate 'Show menu' %}</span>
+</button>
+<div class="menu-container menu-hidden">
+    <button class="button-close-menu button-close-menu-visible">
+         <i class="fa-solid fa-circle-xmark"></i>
+         <span class="hidden-text">{% translate 'Close menu' %}</span>
+    </button>
+    <div class="menu-content">
+        <nav class="menu-nav">
+            <a class="nav-item nav-link" id="home-menu" href="{% url 'portfolio:photos-home' %}">Home</a>
+            <a class="nav-item nav-link" href="#about_area">Sobre</a>
+            <a class="nav-item nav-link" href="#skills_area">Conhecimento</a>
+            <a class="nav-item nav-link" href="#cvitae_area">Curriculum Vitae</a>
+            <a class="nav-item nav-link" id="contact-area" href="{% url 'portfolio:contact_mail' %}">Contato</a>
+
+            {% if user.is_authenticated %}
+                <a href="{% url 'autores:dashboard_photo_new' %}">{% translate 'New work' %}</a>
+                <a href="{% url 'autores:dashboard' %}">{% translate 'Your dashboard' %}</a>
+                <a href="{% url 'portfolio:inventario' %}">{% translate 'Inventory' %}</a>
+                <a class="autores-logout-link" href="{% url 'autores:logout' %}">Logout</a>
+                {% include 'partials/form_logout.html' %}
+            {% else %}
+                <a href="{% url 'autores:login' %}">Login</a>
+                <a href="{% url 'autores:register' %}">{% translate 'Register' %}</a>
+            {% endif %}
+        </nav>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+{% extends 'global/base.html' %}
+{% load i18n %}
+{% block title %}{{ page_title }}{% endblock %}
+{% block conteudo %}
+     <div class="main-content main-content-list container">
+        {% for photo in photos %}
+            {% include 'global/partials/photo.html' %}
+        {% empty %}
+            <div class="center m-y">
+                <h1>{% translate 'There no works to be shown' %}...</h1>
+            </div>
+        {% endfor %}
+     </div>
+{% endblock %}

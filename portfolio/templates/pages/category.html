@@ -1,0 +1,9 @@
+{% extends 'global/base.html' %}
+{% block title %}{{ title }}{% endblock %}
+{% block conteudo %}
+     <div class="main-content main-content-list container">
+        {% for photo in photos %}
+            {% include 'global/partials/photo.html' %}
+        {% endfor %}
+     </div>
+{% endblock %}

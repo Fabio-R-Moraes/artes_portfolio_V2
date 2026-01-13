@@ -1,0 +1,387 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-16 21:35-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: autores/forms/photo_form.py:22
+msgid "Title"
+msgstr "Título"
+
+#: autores/forms/photo_form.py:23
+msgid "Description"
+msgstr "Descrição"
+
+#: autores/forms/photo_form.py:24 portfolio/models.py:36 portfolio/views.py:63
+msgid "Category"
+msgstr "Categoria"
+
+#: autores/forms/photo_form.py:25
+msgid "Value"
+msgstr "Preço"
+
+#: autores/forms/photo_form.py:26
+msgid "History"
+msgstr "História"
+
+#: autores/forms/photo_form.py:27 portfolio/models.py:116
+msgid "Work"
+msgstr "Trabalho"
+
+#: autores/forms/register_forms.py:13
+msgid "Repeat your password"
+msgstr "Repita a sua senha"
+
+#: autores/forms/register_forms.py:34
+msgid "First Name"
+msgstr "Nome"
+
+#: autores/forms/register_forms.py:35
+msgid "Last Name"
+msgstr "Sobrenome"
+
+#: autores/models.py:12 autores/templates/pages/profile.html:3
+msgid "Profile"
+msgstr "Perfil"
+
+#: autores/models.py:13
+#, fuzzy
+#| msgid "Profile"
+msgid "Profiles"
+msgstr "Perfis"
+
+#: autores/templates/pages/dashboard.html:9
+#, fuzzy
+#| msgid "See your works"
+msgid "Your works"
+msgstr "Veja seus trabalhos"
+
+#: autores/templates/pages/dashboard.html:24
+msgid "You have no works... Create one"
+msgstr "Você não tem trabalhos... crie um"
+
+#: autores/templates/pages/dashboard_photos.html:3
+#: autores/templates/pages/dashboard_photos.html:6
+#, fuzzy
+#| msgid "Your dashboard"
+msgid "Works Dashboard"
+msgstr "Seu dashboard"
+
+#: autores/templates/pages/register_view.html:3
+#: base_templates/global/partials/menu.html:24
+msgid "Register"
+msgstr "Cadastre-se"
+
+#: autores/templates/pages/register_view.html:6
+msgid "Register form"
+msgstr "Formulário de Registro"
+
+#: autores/templates/partials/login_messages.html:4
+msgid "You are logged with"
+msgstr "Você está logado com"
+
+#: autores/templates/partials/login_messages.html:5
+msgid "See your works"
+msgstr "Veja seus trabalhos"
+
+#: autores/templates/partials/login_messages.html:6
+msgid "Create a new work"
+msgstr "Crie um novo trabalho"
+
+#: autores/templates/partials/login_messages.html:8
+msgid "Click here"
+msgstr "Clique aqui"
+
+#: autores/templates/partials/login_messages.html:8
+msgid "to logout"
+msgstr " para deslogar"
+
+#: base_templates/global/base.html:7
+msgid "Portfolio"
+msgstr "Portfólio"
+
+#: base_templates/global/partials/about.html:7
+msgid "About Mariana"
+msgstr "Sobre a Mariana"
+
+#: base_templates/global/partials/about.html:14
+msgid "Some informations"
+msgstr "Algumas informações"
+
+#: base_templates/global/partials/about.html:15
+msgid ""
+"I'm a digital and traditional illustrator, i do digital drawing commissions "
+"of"
+msgstr "Sou ilustradora digital e tradicional, faço comissões de"
+
+#: base_templates/global/partials/about.html:16
+msgid "and i'm currently studying visual design at Positivo University"
+msgstr "desenho digital e no momento estou cursando design visual"
+
+#: base_templates/global/partials/about.html:17
+msgid "I've been taking traditional drawing classes"
+msgstr "na Universidade Positivo. Faço aulas de desenho tradicional"
+
+#: base_templates/global/partials/about.html:18
+msgid "for three years."
+msgstr "a três anos."
+
+#: base_templates/global/partials/about.html:19
+msgid "I'm interested in art and design and am always"
+msgstr "Tenho interesse em áreas da arte e do design e estou sempre"
+
+#: base_templates/global/partials/about.html:20
+msgid "open to new experiences and learning. I work well"
+msgstr "aberta a novas experiências e aprendizados. Trabalho bem em"
+
+#: base_templates/global/partials/about.html:21
+msgid "in a team, am organized and creative in a constant pursuit"
+msgstr "equipe, sou organizada e criativa em uma busca constante"
+
+#: base_templates/global/partials/about.html:22
+msgid "of knowledge. I'm passionate about inspiring people of"
+msgstr "pelo conhecimento. Apaixonada por inspirar pessoas com a"
+
+#: base_templates/global/partials/about.html:23
+msgid "my art."
+msgstr "minha arte."
+
+#: base_templates/global/partials/about.html:24
+msgid "Some Visual Arts skills"
+msgstr "Algumas habilidades em Artes Visuais"
+
+#: base_templates/global/partials/about.html:26
+msgid "Fundamental Elements of Visual Language"
+msgstr "Elementos fundamentais da linguagem visual"
+
+#: base_templates/global/partials/about.html:27
+msgid "Artistic Techniques and Expressions"
+msgstr "Técnicas e expressões artísticas"
+
+#: base_templates/global/partials/about.html:28
+msgid "Creative and Congnitive Skills"
+msgstr "Habilidades criativas e cognitivas"
+
+#: base_templates/global/partials/about.html:29
+msgid "Knowledge of Artistic System"
+msgstr "Conhecimento do sistema artístico"
+
+#: base_templates/global/partials/about.html:30
+msgid "Analysis and Contextualization"
+msgstr "Análise e Contextualização"
+
+#: base_templates/global/partials/curriculum_vitae.html:17
+msgid "About"
+msgstr "Sobre"
+
+#: base_templates/global/partials/curriculum_vitae.html:18
+msgid "I'm 18 years old and I do traditional and digital"
+msgstr "Tenho 18 anos, faço ilustração e desenho tradicional e"
+
+#: base_templates/global/partials/curriculum_vitae.html:19
+msgid "illustration and drawing. I'm interested in art and"
+msgstr "digital. Tenho interesse em àreas de arte e design e"
+
+#: base_templates/global/partials/curriculum_vitae.html:20
+msgid "design and I'm open to new experiences and learning."
+msgstr "estou aberta a novas experiências e aprendizado."
+
+#: base_templates/global/partials/curriculum_vitae.html:21
+msgid "I work well in a team, I'm organized and creative,"
+msgstr "equipe, sou organizada e criativa em uma busca constante"
+
+#: base_templates/global/partials/curriculum_vitae.html:22
+msgid "and I'm constantly seeking knowledge."
+msgstr "pelo conhecimento."
+
+#: base_templates/global/partials/curriculum_vitae.html:26
+msgid "Technical Skills"
+msgstr "Competências Técnicas"
+
+#: base_templates/global/partials/curriculum_vitae.html:28
+msgid "Image Editing (Photoshop)"
+msgstr "Edição de imagem (Photoshop)"
+
+#: base_templates/global/partials/curriculum_vitae.html:29
+msgid "Illustration Software (Illustrator, Krita)"
+msgstr "Software de ilustração (Illustrator, Krita)"
+
+#: base_templates/global/partials/curriculum_vitae.html:30
+msgid "Traditional Illustration"
+msgstr "Ilustração tradicional"
+
+#: base_templates/global/partials/curriculum_vitae.html:31
+msgid "English Level B2 (TOEIC Certification)"
+msgstr "Inglês nível B2 (Certificação TOEIC)"
+
+#: base_templates/global/partials/curriculum_vitae.html:32
+msgid "Web Design"
+msgstr "Web Design"
+
+#: base_templates/global/partials/curriculum_vitae.html:33
+msgid "Basic Knowledge of HTML and CSS"
+msgstr "Noções básicas de HTML e CSS"
+
+#: base_templates/global/partials/curriculum_vitae.html:38
+msgid "Professional Background"
+msgstr "Percurso Profissional"
+
+#: base_templates/global/partials/curriculum_vitae.html:39
+msgid "Freelance Illustrator - Since February 2024"
+msgstr "Ilustrador freelance - desde fevereiro 2024"
+
+#: base_templates/global/partials/curriculum_vitae.html:41
+msgid "Application of Color Theory"
+msgstr "Aplicação da teoria das cores"
+
+#: base_templates/global/partials/curriculum_vitae.html:42
+msgid "Lighting Techniques in Drawings and Illustrations"
+msgstr "Técnicas de iluminação em desenhos e ilustrações"
+
+#: base_templates/global/partials/curriculum_vitae.html:43
+msgid "2D Character Design"
+msgstr "Design de personagem 2D"
+
+#: base_templates/global/partials/curriculum_vitae.html:44
+msgid "Realistic Portrait Illustration"
+msgstr "Ilustração em retrato realista"
+
+#: base_templates/global/partials/curriculum_vitae.html:49
+msgid "Academic Background"
+msgstr "Background Acadêmico"
+
+#: base_templates/global/partials/curriculum_vitae.html:50
+msgid "POSITIVO UNIVERSITY"
+msgstr "UNIVERSIDADE POSITIVO"
+
+#: base_templates/global/partials/curriculum_vitae.html:51
+msgid "2025 - Curitiba/PR - Brazil: In progress"
+msgstr "2025 - Curitiba/PR - Brasil: Em andamento"
+
+#: base_templates/global/partials/curriculum_vitae.html:52
+msgid "Bachelor's Degree - Visual Design"
+msgstr "Bacharel - Design Visual"
+
+#: base_templates/global/partials/curriculum_vitae.html:54
+msgid "SESI INDUSTRY COLLEGE"
+msgstr "COLÉGIO SESI DA INDÚSTRIA"
+
+#: base_templates/global/partials/curriculum_vitae.html:55
+msgid "2022 to 2024 - Curitiba/PR - Brazil"
+msgstr "2022 a 2024 - Curitiba/PR - Brasil"
+
+#: base_templates/global/partials/form.html:28
+msgid "Please, fix the errors in the form"
+msgstr "Por favor, corrija os erros no formulário"
+
+#: base_templates/global/partials/form.html:35
+msgid "Send"
+msgstr "Enviar"
+
+#: base_templates/global/partials/header.html:7
+msgid "Maricotinha's Portfolio"
+msgstr "Portfólio da Maricotinha"
+
+#: base_templates/global/partials/menu.html:4
+msgid "Show menu"
+msgstr "Mostrar menu"
+
+#: base_templates/global/partials/menu.html:9
+msgid "Close menu"
+msgstr "Fechar menu"
+
+#: base_templates/global/partials/menu.html:17
+msgid "New work"
+msgstr "Novo trabalho"
+
+#: base_templates/global/partials/menu.html:18
+msgid "Your dashboard"
+msgstr "Seu dashboard"
+
+#: base_templates/global/partials/menu.html:19
+#: portfolio/templates/pages/inventario.html:3
+#: portfolio/templates/pages/inventario.html:6
+msgid "Inventory"
+msgstr "Inventário"
+
+#: base_templates/global/partials/photo.html:29
+msgid "Unknown"
+msgstr "Desconhecido"
+
+#: base_templates/global/partials/photo.html:57
+msgid "Delivering"
+msgstr "Entrega"
+
+#: base_templates/global/partials/photo.html:59
+msgid "Delivery throughout Brazil"
+msgstr "Entrega em todo Brasil"
+
+#: base_templates/global/partials/photo.html:63
+msgid "Shopping cart"
+msgstr "Carrinho de compras"
+
+#: base_templates/global/partials/photo.html:65
+msgid "Add in cart"
+msgstr "Adicione ao carrinho"
+
+#: base_templates/global/partials/photo.html:73
+msgid "Read more"
+msgstr "Ver mais"
+
+#: portfolio/models.py:37
+#, fuzzy
+#| msgid "Category"
+msgid "Categories"
+msgstr "Categorias"
+
+#: portfolio/models.py:53
+#, fuzzy
+#| msgid "Category"
+msgid "Categoria"
+msgstr "Categoria"
+
+#: portfolio/models.py:56
+msgid "Autor"
+msgstr ""
+
+#: portfolio/models.py:117
+msgid "Works"
+msgstr "Trabalhos"
+
+#: portfolio/templates/pages/home.html:12
+#: portfolio/templates/pages/search.html:10
+msgid "There no works to be shown"
+msgstr "Não há trabalhos para serem mostrados"
+
+#: portfolio/templates/pages/inventario.html:7
+msgid "On the site there are"
+msgstr "No site existem"
+
+#: portfolio/templates/pages/inventario.html:7
+msgid "published works"
+msgstr "trabalhos publicados"
+
+#: portfolio/templates/pages/inventario.html:10
+msgid "created in"
+msgstr "criado em"
+
+#: portfolio/templates/pages/inventario.html:12
+msgid "The inventory is empty"
+msgstr "O inventário está vazio"
+
+#~ msgid "Author"
+#~ msgstr "Autor"

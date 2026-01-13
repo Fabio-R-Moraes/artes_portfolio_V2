@@ -1,0 +1,12 @@
+{% extends 'global/base.html' %}
+{% block title %}Login | {% endblock title %}
+{% block conteudo %}
+    <div class="main-content center container">
+        <h2>Login</h2>
+        {% include 'partials/login_messages.html' %}
+    </div>
+    {% include 'global/partials/mensagens.html' %}
+    {% if not user.is_authenticated %}
+        {% include 'global/partials/form.html' %}
+    {% endif %}
+{% endblock conteudo %}

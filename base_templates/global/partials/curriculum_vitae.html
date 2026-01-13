@@ -1,0 +1,60 @@
+{% load i18n %}
+{% load static%}
+    <div id="cvitae_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="main-title">Curriculum Vitae</h3>
+                </div>
+                <div class="col-md-6">
+                    <img src="{% static 'portfolio/image/mary-ann.jpeg' %}" alt="Mariana Moreira de Moraes" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h3 class="main-title">Mariana Moraes</h3>
+                    <div class="row">
+                        <div class="col-md-6 cv-box">
+                            <i class="fa-regular fa-address-book"></i>
+                            <h4>{% translate 'About' %}</h4>
+                            <p>{% translate "I'm 18 years old and I do traditional and digital" %}</p>
+                            <p>{% translate "illustration and drawing. I'm interested in art and" %}</p>
+                            <p>{% translate "design and I'm open to new experiences and learning." %}</p>
+                            <p>{% translate "I work well in a team, I'm organized and creative," %}</p>
+                            <p>e{% translate "and I'm constantly seeking knowledge." %}</p>
+                        </div>
+                        <div class="col-md-6 cv-box">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                            <h4>{% translate 'Technical Skills' %}</h4>
+                            <ul id="about-list">
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate 'Image Editing (Photoshop)' %}</li>
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate 'Illustration Software (Illustrator, Krita)' %}</li>
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate 'Traditional Illustration' %}</li>
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate 'English Level B2 (TOEIC Certification)' %}</li>
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate 'Web Design' %}</li>
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate 'Basic Knowledge of HTML and CSS' %}</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 cv-box">
+                            <i class="fa-regular fa-folder-open"></i>
+                            <h4>{% translate 'Professional Background' %}</h4>
+                            <p>{% translate 'Freelance Illustrator - Since February 2024' %}</p>
+                            <ul id="about-list">
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate 'Application of Color Theory' %}</li>
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate 'Lighting Techniques in Drawings and Illustrations' %}</li>
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate '2D Character Design' %}</li>
+                                <li><i class="fa-regular fa-circle-check"></i>{% translate 'Realistic Portrait Illustration' %}</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6 cv-box">
+                            <i class="fa-regular fa-building"></i>
+                            <h4>{% translate 'Academic Background' %}</h4>
+                            <p>{% translate 'POSITIVO UNIVERSITY' %}</p>
+                            <p>{% translate '2025 - Curitiba/PR - Brazil: In progress' %}</p>
+                            <p>{% translate "Bachelor's Degree - Visual Design" %}</p>
+                            <hr>
+                            <p>{% translate 'SESI INDUSTRY COLLEGE' %}</p>
+                            <p>{% translate '2022 to 2024 - Curitiba/PR - Brazil' %}</p>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </div>

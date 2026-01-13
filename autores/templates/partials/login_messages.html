@@ -1,0 +1,10 @@
+{% load i18n %}
+{% if request.user.is_authenticated %}
+    <div class="login-message">
+        {% translate 'You are logged with' %} {{ request.user.username}}. 
+        <a href="{% url 'autores:dashboard' %}">{% translate 'See your works' %}</a>, 
+        <a href="{% url 'autores:dashboard_photo_new' %}">{% translate 'Create a new work' %}</a>  ou, 
+        {% include 'partials/form_logout.html' %}
+        <a class="autores-logout-link" href="#">{% translate 'Click here' %}</a> {% translate 'to logout' %}!
+    </div>
+{% endif %}

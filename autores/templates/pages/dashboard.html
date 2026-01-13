@@ -1,0 +1,31 @@
+{% extends 'global/base.html' %}
+{% load i18n %}
+{% block title %}Dashboard({{ user }}){% endblock title %}
+{% block conteudo %}
+<div class="main-content center container">
+    <h2>Dashboard({{ user }})</h2>
+    {% include 'partials/login_messages.html' %}
+    <div class="authors-dashboard-container">
+        <h3>{% translate 'Your works' %}</h3>
+        <ul>
+            {% for photo in photos %}
+                <li>
+                    <a href="{% url 'autores:dashboard_photo_edit' photo.id %}">{{ photo.titulo }}</a>
+                    <form action="{% url 'autores:dashboard_photo_delete' %}" class="inline-form form-delete" method="POST">
+                        {% csrf_token %}
+                        <input type="hidden" name="id" value="{{ photo.id }}">
+                        <button class="plaintext-button" type="submit">
+                            🗑️
+                        </button>
+                    </form>
+                </li>
+            {% empty %}
+                <li>
+                    <p>{% translate 'You have no works... Create one' %}!!!!</p>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+{% include 'global/partials/mensagens.html' %}
+{% endblock conteudo %}

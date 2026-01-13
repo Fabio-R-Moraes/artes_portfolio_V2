@@ -1,0 +1,75 @@
+###############################################################################
+# Replace
+# portfoliomariana_ to the name of the gunicorn file you want
+# fabio to your user name
+# app_repo to the folder name of your project
+# projeto to the folder name where you find a file called wsgi.py
+#
+###############################################################################
+# Criando o arquivo portfoliomariana_.socket
+sudo vim /etc/systemd/system/portfoliomariana_.socket
+
+###############################################################################
+# Conteúdo do arquivo
+[Unit]
+Description=gunicorn blog socket
+
+[Socket]
+ListenStream=/run/portfoliomariana_.socket
+
+[Install]
+WantedBy=sockets.target
+
+###############################################################################
+# Criando o arquivo portfoliomariana_.service
+sudo vim /etc/systemd/system/portfoliomariana_.service
+
+###############################################################################
+# Conteúdo do arquivo
+[Unit]
+Description=Gunicorn daemon (You can change if you want)
+Requires=portfoliomariana_.socket
+After=network.target
+
+[Service]
+User=fabio
+Group=www-data
+Restart=on-failure
+EnvironmentFile=/home/fabio/app_repo/.env
+WorkingDirectory=/home/fabio/app_repo
+# --error-logfile --enable-stdio-inheritance --log-level and --capture-output
+# are all for debugging purposes.
+ExecStart=/home/fabio/app_repo/venv/bin/gunicorn \
+          --error-logfile /home/fabio/app_repo/gunicorn-error-log \
+          --enable-stdio-inheritance \
+          --log-level "debug" \
+          --capture-output \
+          --access-logfile - \
+          --workers 6 \
+          --bind unix:/run/portfoliomariana_.socket \
+          projeto.wsgi:application
+
+[Install]
+WantedBy=multi-user.target
+
+###############################################################################
+# Ativando
+sudo systemctl start portfoliomariana_.socket
+sudo systemctl enable portfoliomariana_.socket
+
+# Checando
+sudo systemctl status portfoliomariana_.socket
+curl --unix-socket /run/portfoliomariana_.socket localhost
+sudo systemctl status portfoliomariana_
+
+# Restarting
+sudo systemctl restart portfoliomariana_.service
+sudo systemctl restart portfoliomariana_.socket
+sudo systemctl restart portfoliomariana_
+
+# After changing something
+sudo systemctl daemon-reload
+
+# Debugging
+sudo journalctl -u portfoliomariana_.service
+sudo journalctl -u portfoliomariana_.socket

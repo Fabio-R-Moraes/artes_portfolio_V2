@@ -1,0 +1,7 @@
+{% extends 'global/base.html' %}
+{% block title %}{{ photo.titulo }} | {% endblock %}
+{% block conteudo %}
+     <div class="main-content main-content-detail container">
+         {% include 'global/partials/photo.html' %}
+     </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends 'global/base.html' %}
+{% load i18n %}
+{% block title %}{% translate 'Works Dashboard' %} |{% endblock title %}
+{% block conteudo %}
+<div class="main-content center container">
+    <h2>{% translate 'Works Dashboard' %}</h2>
+    {% include 'partials/login_messages.html' %}
+    <div class="left">
+        {% include 'global/partials/form.html' %}
+    </div>
+</div>
+{% include 'global/partials/mensagens.html' %}
+{% endblock conteudo %}

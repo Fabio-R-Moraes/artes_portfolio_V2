@@ -1,0 +1,10 @@
+{% extends 'global/base.html' %}
+{% load i18n %}
+{% block title %}{% translate 'Register' %} | {% endblock title %}
+{% block conteudo %}
+    <div class="main-content center container">
+        <h2>{% translate 'Register form' %}</h2>
+    </div>
+    {% include 'global/partials/mensagens.html' %}
+    {% include 'global/partials/form.html' %}
+{% endblock conteudo %}

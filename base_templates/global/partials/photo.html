@@ -1,0 +1,86 @@
+{% load i18n %}
+<div class="photo photo-list-item">
+                <div class="photo-cover">
+                    <a href="{{ portfolio.get_absolute_url }}">
+                        <img src="{{ photo.photo_image.url }}" alt="Temporário">
+                    </a>
+                </div>
+                <div class="photo-title-container">
+                    <a href="{{ portfolio.get_absolute_url }}">
+                        <h2 class="photo-title">{{ photo.titulo }}</h2>
+                    </a>
+                </div>
+                <div class="photo-author">
+                    <span class="photo-author-item">
+                        <i class="fas fa-user"></i>
+                        {% if photo.author is not None %}
+                            {% if photo.author.profile %}
+                                <a href="{% url 'autores:profile' photo.author.profile.id %}">
+                            {% endif %}
+                            {% if photo.author.first_name %}
+                                {{ photo.author.first_name }} {{ photo.author.last_name }}
+                            {% else %}
+                                {{ photo.author.username }}
+                            {% endif %}
+                            {% if photo.author.profile %}
+                                </a>
+                            {% endif %}
+                        {% else %}
+                            {% translate 'Unknown' %}
+                        {% endif %}
+                    </span>
+                    {% if photo.category is not None %}
+                        <span class="photo-author-item">
+                            <a href="{% url 'portfolio:category' photo.category.id %}">
+                                <i class="fas fa-layer-group"></i>
+                                {{ photo.category.nome }}
+                            </a>
+                        </span>
+                    {% endif %}
+                    <hr><span class="photo-author-item">
+                        <i class="fas fa-calendar-alt"></i>
+                        {{ photo.criado_em|date:"d/m/Y" }} às {{ photo.criado_em|date:"H:i" }}
+                    </span>
+                    <span class="photo-author-item">
+                        <i class="fa-solid fa-brazilian-real-sign"></i>
+                        {{ photo.preco }}
+                    </span>
+                    <hr><span class="photo-author-item">
+                        {{ photo.descricao }}
+                    </span>
+                </div>
+                <div class="photo-content">
+                    {{ photo.description }}
+                </div>
+                <div class="photo-meta-container">
+                    <div class="photo-meta photo-preparation">
+                        <h3 class="photo-meta-title"><i class="fa-solid fa-paper-plane"></i></i>{% translate 'Delivering' %}</h3>
+                        <div class="photo-meta-text">
+                            {% translate 'Delivery throughout Brazil' %}
+                        </div>
+                    </div>
+                    <div class="photo-meta photo-cart">
+                        <h3 class="photo-meta-title"><i class="fa-solid fa-cart-plus"></i></i>{% translate 'Shopping cart' %}</h3>
+                        <div class="photo-meta-text">
+                            {% translate 'Add in cart' %}
+                        </div>
+                    </div>
+                </div>
+                {% if is_detail_page is not True %}
+                    <footer class="photo-footer">
+                        <a class="photo-read-more button button-dark button-full-width" href="{% url 'portfolio:photos-photo' photo.id %}">
+                            <i class="fas fa-eye"></i>
+                            <span>{% translate 'Read more' %}...</span>
+                        </a>
+                    </footer>
+                {% endif %}
+                {% if is_detail_page is True %}
+                    <div class="historia">
+                        {% if photo.historia_html is True %}
+                            {{ photo.historia|safe}}
+                        {% else %}
+                            {{ photo.historia|linebreaksbr }}
+                        {% endif %}
+                    </div>
+                {% endif %}
+            </div>

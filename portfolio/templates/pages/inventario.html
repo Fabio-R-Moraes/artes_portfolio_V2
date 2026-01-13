@@ -1,0 +1,16 @@
+{% extends 'global/base.html' %}
+{% load i18n %}
+{% block title %}{% translate 'Inventory' %} | {% endblock %}
+{% block conteudo %}
+    <div class="main-content container">
+        <h1>{% translate 'Inventory' %}</h1>
+        <h2>{% translate 'On the site there are' %} {{ total_photos }} {% translate 'published works' %}!!!</h2>
+        <ul>
+            {% for photo in photos %}
+                <li>{{photo.titulo}} {% translate 'created in' %} {{photo.criado_em}}: {{photo.author.first_name}} {{photo.author.last_name}} {{ photo.author_name_complete }}</li>
+            {% empty %}
+                <p>{% translate 'The inventory is empty' %}...</p>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
